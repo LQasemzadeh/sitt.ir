@@ -7,8 +7,8 @@ const Services = () => {
                 <h1 className="text-2xl font-bold p-8">خدمات</h1>
             </header>
             <div>
-                <h4>زمینه‌های فعالیت</h4>
-                <div className="grid grid-cols-3">
+                <h4 className="border-b">زمینه‌های فعالیت</h4>
+                <div className="grid grid-cols-3 p-4">
                     <div>
                         <img src="/assets/images/services/consultingg.png" alt="مشاوره" className="w-60"/>
                         <div>
