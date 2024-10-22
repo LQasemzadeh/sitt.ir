@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <div className="bg-white">
             <header>
-                <h1 className="text-2xl font-bold">خدمات</h1>
+                <h1 className="text-2xl font-bold p-8">خدمات</h1>
             </header>
             <div>
                 <h4>زمینه‌های فعالیت</h4>
