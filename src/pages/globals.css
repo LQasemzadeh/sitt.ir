@@ -10,3 +10,6 @@
 .btn{
     @apply text-sm text-secondary px-4 py-1 rounded-full border-2 border-secondary hover:bg-primary transition ease-linear;
 }
+.card{
+    @apply bg-white rounded overflow-hidden shadow-lg;
+}
