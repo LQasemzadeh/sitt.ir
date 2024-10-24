@@ -9,7 +9,12 @@ import cooperation from "/public/assets/images/services/cooperation.png";
 import smsP from "/public/assets/images/services/sms_panel.webp";
 import ITTower from "/public/assets/images/services/ITtower-1.webp";
 import web from "/public/assets/images/services/web.png";
-import examing from "/public/assets/images/services/examing.png"
+import examing from "/public/assets/images/services/examing.png";
+import eximp from "/public/assets/images/services/eximp.png";
+import dataCenter from "/public/assets/images/services/data-center.webp";
+import informatique from "/public/assets/images/services/Informatique.png";
+
+
 
 const Services = () => {
 
