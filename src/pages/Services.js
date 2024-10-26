@@ -4,15 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import consulting from "/public/assets/images/services/consultingg.png";
-import cooperation from "/public/assets/images/services/cooperation.png";
-import smsP from "/public/assets/images/services/sms_panel.webp";
-import ITTower from "/public/assets/images/services/ITtower-1.webp";
-import web from "/public/assets/images/services/web.png";
-import examing from "/public/assets/images/services/examing.png";
-import eximp from "/public/assets/images/services/eximp.png";
-import dataCenter from "/public/assets/images/services/data-center.webp";
-import informatique from "/public/assets/images/services/Informatique.png";
+
 
 
 
@@ -20,39 +12,39 @@ const Services = () => {
 
     const data = [
         {
-            img: consulting,
+            img: "/assets/images/services/consultingg.png",
             name: "مشاوره در حوزه فناوری اطلاعات",
         },
         {
-            img: cooperation,
+            img: "/assets/images/services/cooperation.png",
             name: "همکاری با شرکت‌های دانش بنیان",
         },
         {
-            img: smsP,
+            img: "/assets/images/services/sms_panel.webp",
             name: "سامانه پیامکی",
         },
         {
-            img: ITTower,
+            img: "/assets/images/services/ITtower-1.webp",
             name: "مدیریت برج فناوری اطلاعات شیراز",
         },
         {
-            img: web,
+            img: "/assets/images/services/web.png",
             name: "طراحی وبسایت",
         },
         {
-            img: examing,
+            img: "/assets/images/services/examing.png",
             name: "برگزاری آزمون‌های خصوصی و مجازی",
         },
         {
-            img: eximp,
+            img: "/assets/images/services/eximp.png",
             name: "صادرات و واردات",
         },
         {
-            img: dataCenter,
+            img: "/assets/images/services/data-center.webp",
             name: "مرکز داده",
         },
         {
-            img: informatique,
+            img: "/assets/images/services/Informatique.png",
             name: "صادرات و واردات کالاهای انفورماتیک",
         },
     ];
@@ -110,14 +102,14 @@ const Services = () => {
                 <div className="flex gap-5 mt-4 lg:mt-0">
                     <button
                         data-aos="fade-down"
-                        className=" bg-orange-400 text-backgroundColor px-4 py-2 rounded-lg active:bg-orange-500"
+                        className="text-secondary px-4 py-2 rounded-lg active:bg-primary"
                         onClick={() => slider.current.slickPrev()}
                     >
                         <FaArrowRight size={12}/>
                     </button>
                     <button
                         data-aos="fade-down"
-                        className=" bg-orange-400 text-backgroundColor px-4 py-2 rounded-lg active:bg-orange-500"
+                        className="text-secondary px-4 py-2 rounded-lg active:bg-primary"
                         onClick={() => slider.current.slickNext()}
                     >
                         <FaArrowLeft size={12}/>

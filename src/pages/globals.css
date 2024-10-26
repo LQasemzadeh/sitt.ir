@@ -13,3 +13,6 @@
 .card{
     @apply bg-white rounded overflow-hidden shadow-lg;
 }
+.slick-slide > div {
+    margin: 0 10px;
+}
