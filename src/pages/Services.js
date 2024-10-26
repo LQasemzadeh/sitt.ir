@@ -122,7 +122,7 @@ const Services = () => {
                 <Slider ref={slider} {...settings}>
                     {data.map((e, index) => (
                         <div
-                            className="h-[300px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+                            className="bg-white h-[300px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
                             key={index}
                         >
                             <div>
