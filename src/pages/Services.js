@@ -90,11 +90,13 @@ const Services = () => {
 
     return (
         <div className="flex flex-col justify-center lg:px-32 px-5 py-16">
+            <header>
+                <h1 className="text-3xl font-semibold text-center lg:text-right">
+                    خدمات
+                </h1>
+            </header>
             <div className="flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
-                <div data-aos="fade-down">
-                    <h1 className="text-3xl font-semibold text-center lg:text-start">
-                        خدمات
-                    </h1>
+            <div data-aos="fade-down">
                     <p className="mt-2 text-center lg:text-start">
                         زمینه های فعالیت شرکت
                     </p>
@@ -102,21 +104,21 @@ const Services = () => {
                 <div className="flex gap-5 mt-4 lg:mt-0">
                     <button
                         data-aos="fade-down"
-                        className="text-secondary px-4 py-2 rounded-lg active:bg-primary"
+                        className="btn"
                         onClick={() => slider.current.slickPrev()}
                     >
                         <FaArrowRight size={12}/>
                     </button>
                     <button
                         data-aos="fade-down"
-                        className="text-secondary px-4 py-2 rounded-lg active:bg-primary"
+                        className="btn"
                         onClick={() => slider.current.slickNext()}
                     >
                         <FaArrowLeft size={12}/>
                     </button>
                 </div>
             </div>
-            <div data-aos="fade-up" className=" mt-5">
+            <div data-aos="fade-up" className="mt-5">
                 <Slider ref={slider} {...settings}>
                     {data.map((e, index) => (
                         <div
@@ -127,7 +129,7 @@ const Services = () => {
                                 <img
                                     src={e.img}
                                     alt="img"
-                                    className=" h-56 rounded-t-xl w-full"
+                                    className=" h-56 rounded-t-xl w-full object-cover"
                                 />
                             </div>
 
