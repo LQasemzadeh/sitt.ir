@@ -4,6 +4,7 @@ import Hero from "@/pages/Hero";
 import Services from "@/pages/Services";
 
 
+
 export default function Home() {
 
 
@@ -17,6 +18,7 @@ export default function Home() {
                 <Navbar />
                 <Hero />
                 <Services />
+
             </div>
         </>
     )
