@@ -53,7 +53,7 @@ const Services = () => {
 
     const settings = {
         accessibility: true,
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         arrows: false,
@@ -89,7 +89,7 @@ const Services = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center lg:px-32 px-5 py-16">
+        <div className="bg-white flex flex-col justify-center lg:px-32 px-5 py-16">
             <header>
                 <h1 className="text-3xl font-semibold text-center lg:text-right">
                     خدمات
@@ -122,7 +122,7 @@ const Services = () => {
                 <Slider ref={slider} {...settings}>
                     {data.map((e, index) => (
                         <div
-                            className="bg-white h-[300px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+                            className="bg-white h-[300px] text-black rounded-xl border border-secondary border-opacity-20 shadow-md mb-2 cursor-pointer"
                             key={index}
                         >
                             <div>
@@ -133,8 +133,8 @@ const Services = () => {
                                 />
                             </div>
 
-                            <div className=" flex flex-col justify-center items-center">
-                                <h1 className=" font-semibold text-lg pt-4">{e.name}</h1>
+                            <div className="flex flex-col justify-center items-center mb-4">
+                                <h1 className="font-bold text-sm pt-4">{e.name}</h1>
                             </div>
                         </div>
                     ))}
