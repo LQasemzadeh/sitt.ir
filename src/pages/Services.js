@@ -66,7 +66,7 @@ const Services = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                 },
             },
             {
@@ -91,13 +91,13 @@ const Services = () => {
     return (
         <div className="bg-white flex flex-col justify-center lg:px-32 px-5 py-16">
             <header>
-                <h1 className="text-3xl font-semibold text-center lg:text-right">
+                <h1 className="text-3xl font-semibold text-center md:text-right">
                     خدمات
                 </h1>
             </header>
-            <div className="flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
+            <div className="flex flex-col items-center md:flex-row justify-between mb-10 lg:mb-0">
             <div data-aos="fade-down">
-                    <p className="mt-2 text-center lg:text-start">
+                    <p className="mt-2 text-center md:text-right">
                         زمینه های فعالیت شرکت
                     </p>
                 </div>
