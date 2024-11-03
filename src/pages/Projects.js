@@ -16,7 +16,7 @@ const Projects = () => {
                     زمینه های فعالیت شرکت
                 </p>
             </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
+            <div className="p-4 bg-blue-50 rounded-lg shadow-md border-2">
                 <Accordion title="پنل پیامک"
                           image="/assets/images/projects/sms_panel.webp"
                            answer="شرکت برج الکترونیک شیراز سرویس‌های پیام‌دهی تحت وب با واسط کاربری ساده و کارآمد برای سازمان‌ها ارائه می‌دهد."/>
