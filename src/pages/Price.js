@@ -1,4 +1,6 @@
 import React from 'react';
+import { TiTick } from "react-icons/ti";
+
 
 const pricingPlans = [
     {
@@ -72,14 +74,24 @@ const Price = () => {
                     <div key={plan.title} className="relative border border-slate-200 shadow-lg p-8 bg-white rounded-2xl">
                         <h3 className="text-lg font-semibold leading-5">{plan.title}</h3>
                         {plan.mostPopular && <p className="absolute -top-3 bg-primary text-secondary px-3 py-0.5 text-sm font-semibold tracking-wide rounded-full shadow-md">پرفروش‌ترین</p>}
-                        <p className="mt-4 text-sm leading-6">{plan.description}</p>
+                        <p className="mt-4 text-sm text-gray-600 leading-6">{plan.description}</p>
                         <div className="-mx-6 mt-4 rounded-lg bg-primary bg-opacity-10 p-6">
-                            <p className="text-sm font-semibold text-secondary">
-                                <span>{plan.price}</span>
-                                <span>{plan.currency}</span>
-                                <span>{plan.frequency}</span>
+                            <p className="flex items-center text-sm font-semibold text-secondary">
+                                <span className="ml-3 text-4xl text-secondary">{plan.price}</span>
+                                <span className="text-gray-500">{plan.currency}</span>
+                                <span className="mr-1.5 text-gray-500">{plan.frequency}</span>
                             </p>
                         </div>
+                        <ul className="mt-6 space-y-4">
+                            {plan.features.map((feature) => (
+                                <li key={feature}
+                                className="text-sm text-gray-600"
+                                >
+                                    <TiTick />
+                                    <span>{feature}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
                 ))}
