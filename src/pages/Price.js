@@ -1,12 +1,12 @@
 import React from 'react';
-import { TiTick } from "react-icons/ti";
+import { FaCheck } from "react-icons/fa";
 
 
 const pricingPlans = [
     {
         title: 'استارتاپ',
         price: '۳۵۰',
-        currency: 'تومان',
+        currency: 'هزار تومان',
         frequency: '/ماهانه',
         description: 'مناسب برای کسب و کارهای در حال رشد',
         features: [
@@ -23,7 +23,7 @@ const pricingPlans = [
     {
         title: 'استارتاپ',
         price: '۳۵۰',
-        currency: 'تومان',
+        currency: 'هزار تومان',
         frequency: '/ماهانه',
         description: 'مناسب برای کسب و کارهای در حال رشد',
         features: [
@@ -39,8 +39,8 @@ const pricingPlans = [
     },
     {
         title: 'استارتاپ',
-        price: '۳۵۰',
-        currency: 'تومان',
+        price: '۴۵۰',
+        currency: ' هزار تومان',
         frequency: '/ماهانه',
         description: 'مناسب برای کسب و کارهای در حال رشد',
         features: [
@@ -85,10 +85,10 @@ const Price = () => {
                         <ul className="mt-6 space-y-4">
                             {plan.features.map((feature) => (
                                 <li key={feature}
-                                className="text-sm text-gray-600"
+                                className="flex text-sm text-gray-600"
                                 >
-                                    <TiTick />
-                                    <span>{feature}</span>
+                                    <FaCheck className="flex-shrink-0" color="green" />
+                                    <span className="mr-2">{feature}</span>
                                 </li>
                             ))}
                         </ul>
