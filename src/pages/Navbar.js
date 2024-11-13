@@ -61,11 +61,11 @@ const Navbar = () => {
                     :
                     <>
                         <Link href="/login">
-                            <a className="btn ml-1">ورود</a>
+                            <a className="btn ml-1 shadow-md">ورود</a>
                         </Link>
 
                         <Link href="/register">
-                            <a className="btn">
+                            <a className="btn shadow-md">
                                 ثبت نام
                             </a>
                         </Link>

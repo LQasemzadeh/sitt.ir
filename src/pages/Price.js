@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa";
 const pricingPlans = [
     {
         title: 'استارتاپ',
-        price: '۳۵۰',
+        price: '۲۵۰',
         currency: 'هزار تومان',
         frequency: '/ماهانه',
         description: 'مناسب برای کسب و کارهای در حال رشد',
@@ -92,6 +92,7 @@ const Price = () => {
                                 </li>
                             ))}
                         </ul>
+                        <a className="btn mt-8 block text-center shadow-lg">{plan.cta}</a>
                     </div>
 
                 ))}
