@@ -11,11 +11,9 @@ const pricingPlans = [
         description: 'مناسب برای کسب و کارهای در حال رشد',
         features: [
           'خط 12 رقمی',
-            'ارسال پیشرفته',
             'پیامک انبوه',
-            'خرید خط جدید',
             'پیامکی بین 70 تا 85 تومان (به میزان خرید بستگی دارد)',
-            '500 پیامک',
+            '300 پیامک',
         ],
         cta: 'خرید اشتراک',
         mostPopular: 'false',
@@ -28,7 +26,6 @@ const pricingPlans = [
         description: 'مناسب برای کسب و کارهای در حال رشد',
         features: [
             'خط 12 رقمی',
-            'ارسال پیشرفته',
             'پیامک انبوه',
             'خرید خط جدید',
             'پیامکی بین 70 تا 85 تومان (به میزان خرید بستگی دارد)',
@@ -49,7 +46,7 @@ const pricingPlans = [
             'پیامک انبوه',
             'خرید خط جدید',
             'پیامکی بین 70 تا 85 تومان (به میزان خرید بستگی دارد)',
-            '500 پیامک',
+            '600 پیامک',
         ],
         cta: 'خرید اشتراک',
         mostPopular: 'false',
@@ -71,7 +68,7 @@ const Price = () => {
             </div>
             <div className="grid sm:grid-cols-3 gap-8">
                 {pricingPlans.map((plan) =>(
-                    <div key={plan.title} className="relative border border-slate-200 shadow-lg p-8 bg-white rounded-2xl">
+                    <div key={plan.title} className="relative border border-slate-200 shadow-lg p-8 bg-white rounded-2xl flex flex-col">
                         <h3 className="text-lg font-semibold leading-5">{plan.title}</h3>
                         {plan.mostPopular && <p className="absolute -top-3 bg-primary text-secondary px-3 py-0.5 text-sm font-semibold tracking-wide rounded-full shadow-md">پرفروش‌ترین</p>}
                         <p className="mt-4 text-sm text-gray-600 leading-6">{plan.description}</p>
@@ -82,7 +79,7 @@ const Price = () => {
                                 <span className="mr-1.5 text-gray-500">{plan.frequency}</span>
                             </p>
                         </div>
-                        <ul className="mt-6 space-y-4">
+                        <ul className="mt-6 space-y-4 flex-1">
                             {plan.features.map((feature) => (
                                 <li key={feature}
                                 className="flex text-sm text-gray-600"
