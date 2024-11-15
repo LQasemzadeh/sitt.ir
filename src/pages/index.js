@@ -4,6 +4,7 @@ import Hero from "@/pages/Hero";
 import Services from "@/pages/Services";
 import Projects from "@/pages/Projects";
 import Price from "@/pages/Price";
+import Contact from "@/pages/Contact";
 
 
 
@@ -22,6 +23,7 @@ export default function Home() {
                 <Services />
                 <Projects />
                 <Price />
+                <Contact />
             </div>
         </>
     )
