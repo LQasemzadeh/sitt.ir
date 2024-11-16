@@ -104,14 +104,14 @@ const Services = () => {
                 <div className="flex gap-5 mt-4 lg:mt-0">
                     <button
                         data-aos="fade-down"
-                        className="btn"
+                        className="btn shadow-md"
                         onClick={() => slider.current.slickPrev()}
                     >
                         <FaArrowRight size={12}/>
                     </button>
                     <button
                         data-aos="fade-down"
-                        className="btn"
+                        className="btn shadow-md"
                         onClick={() => slider.current.slickNext()}
                     >
                         <FaArrowLeft size={12}/>

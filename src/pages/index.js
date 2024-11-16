@@ -5,6 +5,7 @@ import Services from "@/pages/Services";
 import Projects from "@/pages/Projects";
 import Price from "@/pages/Price";
 import Contact from "@/pages/Contact";
+import Footer from "@/pages/Footer";
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
                 <Projects />
                 <Price />
                 <Contact />
+                <Footer />
             </div>
         </>
     )
