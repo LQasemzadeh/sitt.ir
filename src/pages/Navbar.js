@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { useAuth } from "@/hooks/auth";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -15,18 +15,36 @@ const nav = [
 const Navbar = () => {
     const { user } = useAuth({ middleware: 'guest' });
     const [menuOpen, setMenuOpen] = useState(false);
+    const [bgColor, setBgColor] = useState('transparent');  // Initial background is transparent
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Function to handle closing the menu when clicking on "خانه"
     const handleLinkClick = () => {
         setMenuOpen(false); // Close the menu when a link is clicked
     };
 
+    // Handle scroll event to change navbar background color
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setBgColor('white');  // Change to white when scrolled down
+            } else {
+                setBgColor('transparent');  // Keep transparent when at the top
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="mx-auto max-w-7xl p-4 sm:px-6 lg:px-8">
+        <nav className={`mx-auto max-w-7xl p-4 sm:px-6 lg:px-8 sticky top-0 z-50 transition-all duration-300 ${bgColor === 'white' ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div className="flex justify-between items-center">
                 <div>
                     <img
