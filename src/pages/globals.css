@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .trs{
     @apply p-2 rounded hover:bg-primary hover:bg-opacity-30 transition ease-linear;
 }

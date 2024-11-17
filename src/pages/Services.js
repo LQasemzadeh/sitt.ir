@@ -89,7 +89,7 @@ const Services = () => {
     };
 
     return (
-        <div className="bg-white flex flex-col justify-center lg:px-32 px-5 py-16">
+        <div id="services" className="bg-white flex flex-col justify-center lg:px-32 px-5 py-16">
             <header>
                 <h1 className="text-3xl font-semibold text-center md:text-right">
                     خدمات

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <div className="bg-gradient-to-b from-blue-100 to-white px-16 py-8 md:flex justify-between items-center text-center md:text-right">
+        <div id="hero" className="bg-gradient-to-b from-blue-100 to-white px-16 py-8 md:flex justify-between items-center text-center md:text-right">
                <div className="mx-auto mb-6 md:mb-0">
                    <header>
                        <h1 className="mb-4 text-secondary font-bold text-2xl">شرکت برج الکترونیک شیراز</h1>

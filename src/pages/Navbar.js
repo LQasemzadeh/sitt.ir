@@ -4,13 +4,12 @@ import { useAuth } from "@/hooks/auth";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCrossCircled } from "react-icons/rx";
 
-
 const nav = [
-    { name: 'خانه', link: '/' },
-    { name: 'پروژه‌ها', link: '/' },
-    { name: 'خدمات', link: '/' },
-    { name: 'درباره‌ما', link: '/' },
-    { name: 'تماس‌با ما', link: '/' },
+    { name: 'خانه', link: '#hero' },
+    { name: 'پروژه‌ها', link: '#projects' },
+    { name: 'خدمات', link: '#services' },
+    { name: 'درباره‌ما', link: '#about' },
+    { name: 'تماس‌با ما', link: '#contact' },
 ];
 
 const Navbar = () => {
@@ -19,7 +18,11 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
-        console.log("Menu Open:", menuOpen); // Debug log
+    };
+
+    // Function to handle closing the menu when clicking on "خانه"
+    const handleLinkClick = () => {
+        setMenuOpen(false); // Close the menu when a link is clicked
     };
 
     return (
@@ -65,7 +68,7 @@ const Navbar = () => {
                     ) : (
                         <>
                             <Link href="/login">
-                                <a className="btn shadow-md">ورود</a>
+                                <a className="btn shadow-md md:ml-2">ورود</a>
                             </Link>
                             <Link href="/register">
                                 <a className="btn shadow-md">ثبت نام</a>
@@ -95,7 +98,12 @@ const Navbar = () => {
                             {nav.map(item => (
                                 <li key={item.name}>
                                     <Link href={item.link}>
-                                        <a className="trs text-lg font-medium border-b">{item.name}</a>
+                                        <a
+                                            className="trs text-lg font-medium border-b"
+                                            onClick={handleLinkClick}  // Close menu on click
+                                        >
+                                            {item.name}
+                                        </a>
                                     </Link>
                                 </li>
                             ))}
@@ -119,8 +127,6 @@ const Navbar = () => {
                     </div>
                 </div>
             )}
-
-
         </nav>
     );
 };
