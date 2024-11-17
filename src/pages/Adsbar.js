@@ -17,9 +17,9 @@ const Adsbar = () => {
     };
 
     return (
-        <div className="bg-blue-200 py-6">
+        <div className="bg-gray-300 py-6 overflow-hidden">
             <div className="mx-auto max-w-lg px-5 py-5 sm:px-6 sm:py-12 lg:max-w-lg lg:px-4 lg:py-2 scrollbar-hide">
-                <div className="mainContainer">
+                <div className="m-6">
                     <Slider {...settings}>
                         <div className="container">
                             <img src="/assets/saham/Logo-Compress.png" alt="Falat"/>
