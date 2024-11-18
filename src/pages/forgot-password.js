@@ -29,15 +29,18 @@ const ForgotPassword = () => {
                 logo={
                     <Link href="/">
                         <a>
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                            <img
+                                src="/assets/images/SITT.png"
+                                alt="برج الکترونیک شیراز"
+                                className="w-16"
+                            />
                         </a>
                     </Link>
-                }>
+                }
+            >
 
                 <div className="mb-4 text-sm text-gray-600">
-                    Forgot your password? No problem. Just let us know your
-                    email address and we will email you a password reset link
-                    that will allow you to choose a new one.
+                    رمز عبور خود را فراموش کرده‌اید؟ مشکلی نیست. فقط آدرس ایمیل خود را به ما اطلاع دهید تا یک لینک بازنشانی رمز عبور برای شما ارسال کنیم که به شما امکان می‌دهد رمز عبور جدیدی انتخاب کنید.
                 </div>
 
                 {/* Session Status */}
@@ -49,7 +52,7 @@ const ForgotPassword = () => {
                 <form onSubmit={submitForm}>
                     {/* Email Address */}
                     <div>
-                        <Label htmlFor="email">Email</Label>
+                        <Label htmlFor="email">ایمیل</Label>
                         <Input
                             id="email"
                             type="email"
@@ -63,7 +66,7 @@ const ForgotPassword = () => {
                     </div>
 
                     <div className="flex items-center justify-end mt-4">
-                        <Button>Email Password Reset Link</Button>
+                        <Button>ارسال لینک بازنشانی رمز عبور</Button>
                     </div>
                 </form>
             </AuthCard>
