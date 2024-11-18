@@ -33,10 +33,15 @@ const Register = () => {
                 logo={
                     <Link href="/">
                         <a>
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                            <img
+                                src="/assets/images/SITT.png"
+                                alt="برج الکترونیک شیراز"
+                                className="w-16"
+                            />
                         </a>
                     </Link>
-                }>
+                }
+            >
 
                 {/* Validation Errors */}
                 <AuthValidationErrors className="mb-4" errors={errors} />
@@ -44,7 +49,7 @@ const Register = () => {
                 <form onSubmit={submitForm}>
                     {/* Name */}
                     <div>
-                        <Label htmlFor="name">Name</Label>
+                        <Label htmlFor="name">نام و نام خانوادگی</Label>
 
                         <Input
                             id="name"
@@ -59,7 +64,7 @@ const Register = () => {
 
                     {/* Email Address */}
                     <div className="mt-4">
-                        <Label htmlFor="email">Email</Label>
+                        <Label htmlFor="email">ایمیل</Label>
 
                         <Input
                             id="email"
@@ -73,7 +78,7 @@ const Register = () => {
 
                     {/* Password */}
                     <div className="mt-4">
-                        <Label htmlFor="password">Password</Label>
+                        <Label htmlFor="password">رمز عبور</Label>
 
                         <Input
                             id="password"
@@ -89,7 +94,7 @@ const Register = () => {
                     {/* Confirm Password */}
                     <div className="mt-4">
                         <Label htmlFor="password_confirmation">
-                            Confirm Password
+                            تکرار رمز عبور
                         </Label>
 
                         <Input
@@ -106,12 +111,12 @@ const Register = () => {
 
                     <div className="flex items-center justify-end mt-4">
                         <Link href="/login">
-                            <a className="underline text-sm text-gray-600 hover:text-gray-900">
-                                Already registered?
+                            <a className="underline ml-2 text-sm text-gray-600 hover:text-gray-900">
+                                قبل ثبت نام کرده‌اید؟
                             </a>
                         </Link>
 
-                        <Button className="ml-4">Register</Button>
+                        <Button className="ml-4">ثبت نام</Button>
                     </div>
                 </form>
             </AuthCard>

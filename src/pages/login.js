@@ -44,10 +44,15 @@ const Login = () => {
                 logo={
                     <Link href="/">
                         <a>
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                            <img
+                                src="/assets/images/SITT.png"
+                                alt="برج الکترونیک شیراز"
+                                className="w-16"
+                            />
                         </a>
                     </Link>
-                }>
+                }
+            >
 
                 {/* Session Status */}
                 <AuthSessionStatus className="mb-4" status={status} />
@@ -58,7 +63,7 @@ const Login = () => {
                 <form onSubmit={submitForm}>
                     {/* Email Address */}
                     <div>
-                        <Label htmlFor="email">Email</Label>
+                        <Label htmlFor="email">ایمیل</Label>
 
                         <Input
                             id="email"
@@ -73,7 +78,7 @@ const Login = () => {
 
                     {/* Password */}
                     <div className="mt-4">
-                        <Label htmlFor="password">Password</Label>
+                        <Label htmlFor="password">رمز عبور</Label>
 
                         <Input
                             id="password"
@@ -99,19 +104,19 @@ const Login = () => {
                             />
 
                             <span className="ml-2 text-sm text-gray-600">
-                                Remember me
+                                مرا به خاطر بسپار
                             </span>
                         </label>
                     </div>
 
                     <div className="flex items-center justify-end mt-4">
                         <Link href="/forgot-password">
-                            <a className="underline text-sm text-gray-600 hover:text-gray-900">
-                                Forgot your password?
+                            <a className="underline ml-2 text-sm text-gray-600 hover:text-gray-900">
+                                آیا رمز عبور خود را فراموش کرده‌اید؟
                             </a>
                         </Link>
 
-                        <Button className="ml-3">Login</Button>
+                        <Button className="ml-3">ورود</Button>
                     </div>
                 </form>
             </AuthCard>
